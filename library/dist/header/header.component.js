@@ -1,3 +1,22 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Header = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _headerModule = require("./header.module.css");
+
+var styles = _interopRequireWildcard(_headerModule);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16,11 +35,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React, { PureComponent } from 'react';
-import * as styles from './header.module.css';
-export var Header =
+var Header =
 /*#__PURE__*/
-function (_PureComponent) {
+exports.Header = function (_PureComponent) {
   _inherits(Header, _PureComponent);
 
   function Header() {
@@ -32,9 +49,9 @@ function (_PureComponent) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      return React.createElement("div", {
+      return _react2.default.createElement("div", {
         className: styles.headerContainer
-      }, React.createElement("img", {
+      }, _react2.default.createElement("img", {
         className: styles.logo,
         src: this.props.img,
         alt: "logo"
@@ -43,4 +60,4 @@ function (_PureComponent) {
   }]);
 
   return Header;
-}(PureComponent);
+}(_react.PureComponent);

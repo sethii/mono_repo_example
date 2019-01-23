@@ -1,3 +1,20 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Pagination = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _antd = require("antd");
+
+require("./pagination.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -22,12 +39,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React, { PureComponent } from 'react';
-import { Pagination as AntdPagination } from 'antd';
-import './pagination.css';
-export var Pagination =
+var Pagination =
 /*#__PURE__*/
-function (_PureComponent) {
+exports.Pagination = function (_PureComponent) {
   _inherits(Pagination, _PureComponent);
 
   function Pagination() {
@@ -49,7 +63,7 @@ function (_PureComponent) {
           backgroundColor = _ref.backgroundColor,
           backgroundColorActive = _ref.backgroundColorActive;
 
-      return React.createElement(AntdPagination, _extends({
+      return _react2.default.createElement(_antd.Pagination, _extends({
         style: {
           '--pagination-bg-color': backgroundColor,
           '--pagination-bg-color--active': backgroundColorActive,
@@ -61,4 +75,4 @@ function (_PureComponent) {
   }]);
 
   return Pagination;
-}(PureComponent);
+}(_react.PureComponent);

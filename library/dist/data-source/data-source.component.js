@@ -1,3 +1,30 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.DataSource = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _antd = require("antd");
+
+var _dataSourceModule = require("./data-source.module.css");
+
+var styles = _interopRequireWildcard(_dataSourceModule);
+
+var _ = require("..");
+
+var _classnames = require("classnames");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16,14 +43,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React, { Component } from 'react';
-import { Spin } from 'antd';
-import * as styles from './data-source.module.css';
-import { Button } from '..';
-import classNames from 'classnames';
-export var DataSource =
+var DataSource =
 /*#__PURE__*/
-function (_Component) {
+exports.DataSource = function (_Component) {
   _inherits(DataSource, _Component);
 
   function DataSource() {
@@ -90,16 +112,16 @@ function (_Component) {
           loading = _this$state.loading,
           data = _this$state.data,
           error = _this$state.error;
-      if (loading) return React.createElement("div", {
+      if (loading) return _react2.default.createElement("div", {
         className: styles.center
-      }, React.createElement(Spin, {
+      }, _react2.default.createElement(_antd.Spin, {
         size: "large"
       }));
 
       if (error) {
-        return React.createElement("div", {
-          className: classNames(styles.center, styles.error)
-        }, error, React.createElement(Button, {
+        return _react2.default.createElement("div", {
+          className: (0, _classnames2.default)(styles.center, styles.error)
+        }, error, _react2.default.createElement(_.Button, {
           className: styles.errorBtn,
           onClick: this.loadData
         }, "Retry"));
@@ -110,4 +132,4 @@ function (_Component) {
   }]);
 
   return DataSource;
-}(Component);
+}(_react.Component);

@@ -1,3 +1,18 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.LocalizationProvider = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _localization = require("../localization-context/localization.context");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16,11 +31,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React from 'react';
-import { LocalizationContext } from '../localization-context/localization.context';
-export var LocalizationProvider =
+var LocalizationProvider =
 /*#__PURE__*/
-function (_React$Component) {
+exports.LocalizationProvider = function (_React$Component) {
   _inherits(LocalizationProvider, _React$Component);
 
   function LocalizationProvider() {
@@ -37,11 +50,11 @@ function (_React$Component) {
           localization = _this$props.localization,
           lang = _this$props.lang;
       var selectedLocale = localization ? localization[lang] : {};
-      return React.createElement(LocalizationContext.Provider, {
+      return _react2.default.createElement(_localization.LocalizationContext.Provider, {
         value: selectedLocale
       }, children);
     }
   }]);
 
   return LocalizationProvider;
-}(React.Component);
+}(_react2.default.Component);

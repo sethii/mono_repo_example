@@ -1,3 +1,20 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Modal = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _antd = require("antd");
+
+require("./modal.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
@@ -18,12 +35,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React, { PureComponent } from 'react';
-import { Modal as AntModal } from 'antd';
-import './modal.css';
-export var Modal =
+var Modal =
 /*#__PURE__*/
-function (_PureComponent) {
+exports.Modal = function (_PureComponent) {
   _inherits(Modal, _PureComponent);
 
   function Modal() {
@@ -35,7 +49,7 @@ function (_PureComponent) {
   _createClass(Modal, [{
     key: "render",
     value: function render() {
-      return React.createElement(AntModal, _extends({}, this.props, {
+      return _react2.default.createElement(_antd.Modal, _extends({}, this.props, {
         title: null,
         footer: null,
         bodyStyle: {
@@ -46,4 +60,4 @@ function (_PureComponent) {
   }]);
 
   return Modal;
-}(PureComponent);
+}(_react.PureComponent);

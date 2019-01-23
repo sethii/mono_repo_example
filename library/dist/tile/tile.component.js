@@ -1,3 +1,26 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Tile = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _classnames = require("classnames");
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _tileModule = require("./tile.module.css");
+
+var styles = _interopRequireWildcard(_tileModule);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16,12 +39,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React, { PureComponent } from 'react';
-import classNames from 'classnames';
-import * as styles from './tile.module.css';
-export var Tile =
+var Tile =
 /*#__PURE__*/
-function (_PureComponent) {
+exports.Tile = function (_PureComponent) {
   _inherits(Tile, _PureComponent);
 
   function Tile() {
@@ -35,14 +55,14 @@ function (_PureComponent) {
     value: function render() {
       var _this = this;
 
-      return React.createElement("div", {
+      return _react2.default.createElement("div", {
         onClick: function onClick() {
           return _this.props.onClick(_this.props.url);
         },
-        className: classNames(styles.tile, this.props.className)
+        className: (0, _classnames2.default)(styles.tile, this.props.className)
       }, this.props.name);
     }
   }]);
 
   return Tile;
-}(PureComponent);
+}(_react.PureComponent);

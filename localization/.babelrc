@@ -15,6 +15,7 @@
     "syntax-dynamic-import",
     "dynamic-import-node",
     "transform-class-properties",
-    "transform-flow-strip-types"
+    "transform-flow-strip-types",
+    "transform-es2015-modules-commonjs"
   ]
 }

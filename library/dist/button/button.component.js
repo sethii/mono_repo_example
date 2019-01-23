@@ -1,3 +1,18 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Button = undefined;
+
+var _react = require("react");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _antd = require("antd");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -16,11 +31,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-import React, { PureComponent } from 'react';
-import { Button as AntButton } from 'antd';
-export var Button =
+var Button =
 /*#__PURE__*/
-function (_PureComponent) {
+exports.Button = function (_PureComponent) {
   _inherits(Button, _PureComponent);
 
   function Button() {
@@ -32,9 +45,9 @@ function (_PureComponent) {
   _createClass(Button, [{
     key: "render",
     value: function render() {
-      return React.createElement(AntButton, this.props);
+      return _react2.default.createElement(_antd.Button, this.props);
     }
   }]);
 
   return Button;
-}(PureComponent);
+}(_react.PureComponent);

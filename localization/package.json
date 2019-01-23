@@ -6,7 +6,6 @@
   "files": [
     "dist"
   ],
-  "dependencies": {},
   "scripts": {
     "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
@@ -27,6 +26,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-flow": "^7.0.0",
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-dynamic-import": "^2.1.0",
     "babel-plugin-transform-flow-strip-types": "^6.22.0",
