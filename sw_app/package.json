@@ -1,11 +1,11 @@
 {
   "name": "sw_app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@sethii/library": "^1.0.0",
+    "@sethii/localization": "^1.0.0",
     "classnames": "^2.2.6",
-    "@sethii/library": "0.1.0",
-    "@sethii/localization": "0.1.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-scripts": "2.1.1"
