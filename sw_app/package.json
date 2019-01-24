@@ -1,10 +1,10 @@
 {
   "name": "sw_app",
-  "version": "1.0.0",
+  "version": "5.0.0",
   "private": true,
   "dependencies": {
-    "@sethii/library": "^1.0.0",
-    "@sethii/localization": "^1.0.0",
+    "@sethii/library": "^5.0.0",
+    "@sethii/localization": "^5.0.0",
     "classnames": "^2.2.6",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
